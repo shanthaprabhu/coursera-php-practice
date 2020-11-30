@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+<title> Guessing Game for P.Shantha</title>
+</head>
+<body>
+<h1>Welcome to my guessing game</h1>
+<p>
+<?php
+if(!isset($_GET)){
+	echo("Missing guess parameter");
+}	
+else if(!isset($_GET[]=='null')){ 
+	echo("Your guess is too short");
+}
+else if (!is_numeric($_GET('guess')){
+	echo("Your guess is not a number");
+} 
+else if ($_GET('guess') < 24){
+	echo("Your guess is too low");
+}
+else if ($_GET('guess') > 24){
+	echo("Your guess is too high");
+}
+else{
+	echo("Congratulations - You are right");
+}
+?>
+</p>
+</body>
+</html>
